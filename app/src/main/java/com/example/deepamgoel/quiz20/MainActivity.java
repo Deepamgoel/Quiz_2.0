@@ -1,11 +1,16 @@
 package com.example.deepamgoel.quiz20;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.deepamgoel.quiz20.level_one.LevelOneActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle(" ");
+        TextView title = toolbar.findViewById(R.id.toolbar_title);
+        title.setText(R.string.app_name);
         setSupportActionBar(toolbar);
     }
 
@@ -25,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.info) {
@@ -34,5 +41,10 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
 
+    }
+
+    public void launch(View view) {
+        Intent intent = new Intent(this, LevelOneActivity.class);
+        startActivity(intent);
     }
 }

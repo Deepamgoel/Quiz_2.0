@@ -6,9 +6,9 @@
         android:color="@android:color/black" />
     <corners android:radius="@dimen/forty_eight_dp" />
     <padding
-        android:bottom="@dimen/eight_dp"
-        android:left="@dimen/eight_dp"
-        android:right="@dimen/eight_dp"
-        android:top="@dimen/eight_dp" />
+        android:bottom="@dimen/sixteen_dp"
+        android:left="@dimen/sixteen_dp"
+        android:right="@dimen/sixteen_dp"
+        android:top="@dimen/sixteen_dp" />
 
 </shape>

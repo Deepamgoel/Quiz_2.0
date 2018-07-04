@@ -8,4 +8,5 @@
     <dimen name="thirty_two_sp">32sp</dimen>
     <dimen name="sixteen_dp">16dp</dimen>
     <dimen name="twenty_sp">20sp</dimen>
+    <dimen name="twenty_four_sp">24sp</dimen>
 </resources>
