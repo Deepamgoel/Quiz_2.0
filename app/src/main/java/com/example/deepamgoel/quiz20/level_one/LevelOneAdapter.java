@@ -53,11 +53,11 @@ public class LevelOneAdapter extends RecyclerView.Adapter<LevelOneAdapter.CardVi
         CardViewHolder(View itemView) {
             super(itemView);
 
-            question = itemView.findViewById(R.id.ques);
-            option1 = itemView.findViewById(R.id.opt1);
-            option2 = itemView.findViewById(R.id.opt2);
-            option3 = itemView.findViewById(R.id.opt3);
-            option4 = itemView.findViewById(R.id.opt4);
+            question = itemView.findViewById(R.id.ques_level_one);
+            option1 = itemView.findViewById(R.id.opt1_level_one);
+            option2 = itemView.findViewById(R.id.opt2_level_one);
+            option3 = itemView.findViewById(R.id.opt3_level_one);
+            option4 = itemView.findViewById(R.id.opt4_level_one);
         }
     }
 }

@@ -27,10 +27,11 @@
             android:background="@drawable/button"
             android:fontFamily="@font/merriweather_regular"
             android:foreground="?android:attr/selectableItemBackground"
-            android:onClick="launch"
+            android:onClick="launchLevelOne"
             android:text="@string/start"
             android:textAllCaps="true"
             android:textSize="@dimen/twenty_sp" />
+
     </FrameLayout>
 
 </android.support.design.widget.CoordinatorLayout>

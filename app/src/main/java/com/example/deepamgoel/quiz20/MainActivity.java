@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void launch(View view) {
+    public void launchLevelOne(View view) {
         Intent intent = new Intent(this, LevelOneActivity.class);
         startActivity(intent);
     }

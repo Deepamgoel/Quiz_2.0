@@ -1,6 +1,5 @@
-package com.example.deepamgoel.quiz20.level_one;
+package com.example.deepamgoel.quiz20.level_two;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -13,27 +12,26 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.deepamgoel.quiz20.R;
-import com.example.deepamgoel.quiz20.level_two.LevelTwoActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LevelOneActivity extends AppCompatActivity {
+public class LevelTwoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level_one);
+        setContentView(R.layout.activity_level_two);
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(" ");
         TextView title = toolbar.findViewById(R.id.toolbar_title);
-        title.setText(R.string.level1);
+        title.setText(R.string.level2);
         setSupportActionBar(toolbar);
 
-        List<LevelOneModel> listItems = new ArrayList<>();
+        List<LevelTwoModel> listItems = new ArrayList<>();
 
         for (int i = 0; i < 5; i++) {
-            LevelOneModel listItem = new LevelOneModel(
+            LevelTwoModel listItem = new LevelTwoModel(
                     "Question " + (i + 1),
                     "Lorem Ipsum",
                     "Lorem Ipsum",
@@ -43,11 +41,11 @@ public class LevelOneActivity extends AppCompatActivity {
             listItems.add(listItem);
         }
 
-        RecyclerView mRecyclerView = findViewById(R.id.recyclerViewOne);
+        RecyclerView mRecyclerView = findViewById(R.id.recyclerViewTwo);
         mRecyclerView.setNestedScrollingEnabled(false);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        mRecyclerView.setAdapter(new LevelOneAdapter(listItems));
+        mRecyclerView.setAdapter(new LevelTwoAdapter(listItems));
 
     }
 
@@ -62,15 +60,16 @@ public class LevelOneActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.info) {
-            Toast.makeText(LevelOneActivity.this, "Action clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LevelTwoActivity.this, "Action clicked", Toast.LENGTH_SHORT).show();
             return true;
         }
         return super.onOptionsItemSelected(item);
 
     }
 
-    public void launchLevelTwo(View view) {
-        Intent intent = new Intent(this, LevelTwoActivity.class);
-        startActivity(intent);
+    public void launchLevelThree(View view) {
+//        Intent intent = new Intent(this, LevelThreeActivity.class);
+//        startActivity(intent);
     }
+
 }

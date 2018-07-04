@@ -9,4 +9,6 @@
     <string name="opt3">Swelling on face, legs etc</string>
     <string name="opt4">All of the above</string>
     <string name="level1">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <string name="level2">Level 2</string>
 </resources>

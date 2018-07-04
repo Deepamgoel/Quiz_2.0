@@ -17,7 +17,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/ques_level_one"
+                android:id="@+id/ques_level_two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/eight_dp"
@@ -31,11 +31,11 @@
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ques_level_one"
+                android:layout_below="@id/ques_level_two"
                 android:layout_margin="@dimen/eight_dp">
 
-                <RadioButton
-                    android:id="@+id/opt1_level_one"
+                <CheckBox
+                    android:id="@+id/opt1_level_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/eight_dp"
@@ -45,8 +45,8 @@
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/twenty_sp" />
 
-                <RadioButton
-                    android:id="@+id/opt2_level_one"
+                <CheckBox
+                    android:id="@+id/opt2_level_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/eight_dp"
@@ -56,8 +56,8 @@
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/twenty_sp" />
 
-                <RadioButton
-                    android:id="@+id/opt3_level_one"
+                <CheckBox
+                    android:id="@+id/opt3_level_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/eight_dp"
@@ -67,8 +67,8 @@
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/twenty_sp" />
 
-                <RadioButton
-                    android:id="@+id/opt4_level_one"
+                <CheckBox
+                    android:id="@+id/opt4_level_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/eight_dp"
