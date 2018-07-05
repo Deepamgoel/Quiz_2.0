@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".level_one.LevelOneActivity" />
         <activity android:name=".level_two.LevelTwoActivity" />
+        <activity android:name=".level_three.LevelThreeActivity"></activity>
     </application>
 
 </manifest>

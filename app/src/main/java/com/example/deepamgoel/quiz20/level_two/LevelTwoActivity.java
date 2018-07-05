@@ -1,5 +1,6 @@
 package com.example.deepamgoel.quiz20.level_two;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,11 +13,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.deepamgoel.quiz20.R;
+import com.example.deepamgoel.quiz20.level_three.LevelThreeActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class LevelTwoActivity extends AppCompatActivity {
+
+    List<LevelTwoModel> listItems;
+    RecyclerView mRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,24 +33,15 @@ public class LevelTwoActivity extends AppCompatActivity {
         title.setText(R.string.level2);
         setSupportActionBar(toolbar);
 
-        List<LevelTwoModel> listItems = new ArrayList<>();
+        mRecyclerView = findViewById(R.id.recyclerViewTwo);
+        listItems = new ArrayList<>();
 
-        for (int i = 0; i < 5; i++) {
-            LevelTwoModel listItem = new LevelTwoModel(
-                    "Question " + (i + 1),
-                    "Lorem Ipsum",
-                    "Lorem Ipsum",
-                    "Lorem Ipsum",
-                    "Lorem Ipsum"
-            );
-            listItems.add(listItem);
-        }
+        loadData();
 
-        RecyclerView mRecyclerView = findViewById(R.id.recyclerViewTwo);
         mRecyclerView.setNestedScrollingEnabled(false);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        mRecyclerView.setAdapter(new LevelTwoAdapter(listItems));
+        mRecyclerView.setAdapter(new LevelTwoAdapter(this, listItems));
 
     }
 
@@ -68,8 +64,12 @@ public class LevelTwoActivity extends AppCompatActivity {
     }
 
     public void launchLevelThree(View view) {
-//        Intent intent = new Intent(this, LevelThreeActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, LevelThreeActivity.class);
+        startActivity(intent);
+    }
+
+    private void loadData() {
+
     }
 
 }
