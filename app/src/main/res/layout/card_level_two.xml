@@ -18,15 +18,8 @@
 
             <TextView
                 android:id="@+id/ques_level_two"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/eight_dp"
-                android:fontFamily="@font/merriweather_regular"
-                android:gravity="center"
-                android:text="@string/que1"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/twenty_four_sp"
-                android:textStyle="bold" />
+                style="@style/TextFormattingQuestion"
+                tools:text="@string/que1" />
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -36,47 +29,23 @@
 
                 <CheckBox
                     android:id="@+id/opt1_level_two"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/eight_dp"
-                    android:fontFamily="@font/merriweather_regular"
-                    android:gravity="center"
-                    android:text="@string/opt1"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/twenty_sp" />
+                    style="@style/TextFormattingAnswer"
+                    android:text="@string/opt1" />
 
                 <CheckBox
                     android:id="@+id/opt2_level_two"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/eight_dp"
-                    android:fontFamily="@font/merriweather_regular"
-                    android:gravity="center"
-                    android:text="@string/opt2"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/twenty_sp" />
+                    style="@style/TextFormattingAnswer"
+                    android:text="@string/opt2" />
 
                 <CheckBox
                     android:id="@+id/opt3_level_two"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/eight_dp"
-                    android:fontFamily="@font/merriweather_regular"
-                    android:gravity="center"
-                    android:text="@string/opt3"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/twenty_sp" />
+                    style="@style/TextFormattingAnswer"
+                    android:text="@string/opt3" />
 
                 <CheckBox
                     android:id="@+id/opt4_level_two"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/eight_dp"
-                    android:fontFamily="@font/merriweather_regular"
-                    android:gravity="center"
-                    android:text="@string/opt4"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/twenty_sp" />
+                    style="@style/TextFormattingAnswer"
+                    android:text="@string/opt4" />
 
             </RadioGroup>
 

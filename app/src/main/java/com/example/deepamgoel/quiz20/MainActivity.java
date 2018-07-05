@@ -14,6 +14,8 @@ import com.example.deepamgoel.quiz20.level_one.LevelOneActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static int score;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         TextView title = toolbar.findViewById(R.id.toolbar_title);
         title.setText(R.string.app_name);
         setSupportActionBar(toolbar);
+        score = 0;
     }
 
     @Override
