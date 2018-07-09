@@ -15,6 +15,7 @@ import com.example.deepamgoel.quiz20.level_one.LevelOneActivity;
 public class MainActivity extends AppCompatActivity {
 
     public static int score;
+    public static TextView scoreTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

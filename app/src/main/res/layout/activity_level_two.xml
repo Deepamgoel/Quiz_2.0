@@ -33,18 +33,46 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/eight_dp" />
 
-            <Button
-                android:layout_width="wrap_content"
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/sixteen_dp"
-                android:background="@drawable/button"
-                android:fontFamily="@font/merriweather_regular"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="launchLevelThree"
-                android:text="@string/next_level"
-                android:textAllCaps="true"
-                android:textSize="@dimen/twenty_sp" />
+                android:layout_margin="@dimen/eight_dp"
+                android:orientation="horizontal">
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/sixteen_dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/merriweather_regular"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="@string/submit"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/sixteen_dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:enabled="false"
+                    android:fontFamily="@font/merriweather_regular"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="launchLevelThree"
+                    android:text="@string/next_level"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sixteen_sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
