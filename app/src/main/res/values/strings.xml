@@ -136,5 +136,7 @@
 
     <string name="submit">Submit</string>
     <string name="score">Score: %d/%d</string>
+    <string name="ok">OK</string>
+    <string name="dialog_message">The quiz contains Three Parts.  Lower part must be played in order to unlock higher levels</string>
 
 </resources>

@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.deepamgoel.quiz20.R;
 
+import java.util.Collections;
 import java.util.List;
 
 public class LevelOneAdapter extends RecyclerView.Adapter<LevelOneAdapter.CardViewHolder> {
@@ -46,7 +47,22 @@ public class LevelOneAdapter extends RecyclerView.Adapter<LevelOneAdapter.CardVi
         holder.radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                LevelOneActivity.answerList.add(new LevelOneAnswer(holder, holder.getAdapterPosition(), group, checkedId));
+                Boolean present = false;
+                LevelOneAnswer levelOneAnswer = new LevelOneAnswer(holder, group, checkedId);
+
+//              To Replace existing object, if any.
+                for (LevelOneAnswer iterator : LevelOneActivity.answerList) {
+                    if (iterator.radioGroup.equals(group)) {
+                        Collections.replaceAll(LevelOneActivity.answerList, iterator, levelOneAnswer);
+                        present = true;
+                        break;
+                    }
+                }
+
+//              Adding object if not present already
+                if (!present) {
+                    LevelOneActivity.answerList.add(new LevelOneAnswer(holder, group, checkedId));
+                }
             }
         });
     }

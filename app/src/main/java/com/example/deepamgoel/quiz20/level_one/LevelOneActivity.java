@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.deepamgoel.quiz20.MainActivity;
 import com.example.deepamgoel.quiz20.R;
+import com.example.deepamgoel.quiz20.ViewDialog;
 import com.example.deepamgoel.quiz20.level_two.LevelTwoActivity;
 
 import java.util.ArrayList;
@@ -53,7 +54,6 @@ public class LevelOneActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
     }
@@ -62,7 +62,8 @@ public class LevelOneActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.info) {
-            Toast.makeText(LevelOneActivity.this, "Action clicked", Toast.LENGTH_SHORT).show();
+            ViewDialog alert = new ViewDialog();
+            alert.showDialog(this, getString(R.string.dialog_message));
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -71,7 +72,7 @@ public class LevelOneActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(LevelOneActivity.this, "Action Disabled", Toast.LENGTH_SHORT).show();//
+        Toast.makeText(LevelOneActivity.this, "Action Disabled", Toast.LENGTH_SHORT).show();
     }
 
     public void submitLevelOne(View view) {
@@ -82,10 +83,18 @@ public class LevelOneActivity extends AppCompatActivity {
 
             if (String.valueOf(radioButton.getText()).equals(obj.viewHolder.answer)) {
                 MainActivity.score += 2;
-//              TODO Add Score Indicator
-//  MainActivity.scoreTextView.setText(getString(R.string.score, MainActivity.score, 30));
+//                TODO Add Score Indicator
+//                MainActivity.scoreTextView.setText(getString(R.string.score, MainActivity.score, 30));
                 radioButton.setTextColor(getResources().getColor(R.color.correct));
             } else {
+                int options = 0;
+                while (options < 4) {
+                    RadioButton correctButton = (RadioButton) obj.radioGroup.getChildAt(options);
+                    if (String.valueOf(correctButton.getText()).equals(obj.viewHolder.answer)) {
+                        correctButton.setTextColor(getResources().getColor(R.color.correct));
+                    }
+                    options++;
+                }
                 radioButton.setTextColor(getResources().getColor(R.color.incorrect));
             }
             obj.viewHolder.option1.setEnabled(false);
@@ -95,7 +104,7 @@ public class LevelOneActivity extends AppCompatActivity {
 
         }
 
-        Toast.makeText(this, "Score " + MainActivity.score, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, getString(R.string.score, MainActivity.score, 30), Toast.LENGTH_LONG).show();
 
         Button button = findViewById(R.id.launch_level_two);
         button.setEnabled(true);

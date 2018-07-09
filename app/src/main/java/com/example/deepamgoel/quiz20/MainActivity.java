@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.deepamgoel.quiz20.level_one.LevelOneActivity;
 
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
     }
@@ -40,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.info) {
-            Toast.makeText(MainActivity.this, "Action clicked", Toast.LENGTH_SHORT).show();
+            ViewDialog alert = new ViewDialog();
+            alert.showDialog(this, getString(R.string.dialog_message));
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -52,3 +51,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 }
+
