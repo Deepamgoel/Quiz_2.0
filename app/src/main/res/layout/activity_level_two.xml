@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
@@ -13,49 +14,65 @@
 
         <include layout="@layout/toolbar" />
 
-
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v4.widget.NestedScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/score_text_view"
+            style="@style/TextFormattingAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            tools:text="@string/score" />
+
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recyclerViewTwo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/eight_dp" />
-
             <LinearLayout
-                style="?android:attr/buttonBarStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/eight_dp"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-                <Button
-                    android:id="@+id/level_one_submit"
-                    style="@style/Buttons"
-                    android:text="@string/submit" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/eight_dp" />
 
-                <Button
-                    android:id="@+id/launch_level_three"
-                    style="@style/Buttons"
-                    android:enabled="false"
-                    android:onClick="launchLevelThree"
-                    android:text="@string/next_level" />
+                <LinearLayout
+                    style="?android:attr/buttonBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/eight_dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/level_one_submit"
+                        style="@style/Buttons"
+                        android:onClick="submitLevelTwo"
+                        android:text="@string/submit" />
+
+                    <Button
+                        android:id="@+id/launch_level_three"
+                        style="@style/Buttons"
+                        android:enabled="false"
+                        android:onClick="launchLevelThree"
+                        android:text="@string/next_level" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
-        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
 
-    </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

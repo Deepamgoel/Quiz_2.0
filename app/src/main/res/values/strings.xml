@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Quiz 2.0</string>
     <string name="info">info</string>
-    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
 
     <string name="que1">What are the symptoms of suffering from kidney disease?</string>
     <string name="opt1">High blood pressure</string>
@@ -15,6 +16,8 @@
     <string name="level1">Level 1</string>
     <string name="level2">Level 2</string>
     <string name="level3">Level 3</string>
+
+    <!--Question-Options-Answer set for level one-->
 
     <string name="level_one_question_one">MSI is the abbreviation of</string>
     <string name="level_one_question_one_option_one">Medium Scale Integrated</string>
@@ -99,44 +102,102 @@
         <item>@string/level_one_question_five_answer</item>
     </string-array>
 
-    <!--<string name="level_two_question_one">MSI is the abbreviation of</string>-->
-    <!--<string name="level_two_question_one_option_one">Medium Scale Integrated</string>-->
-    <!--<string name="level_two_question_one_option_two">Medium System Integrated</string>-->
-    <!--<string name="level_two_question_one_option_three">Medium Scale Intelligent</string>-->
-    <!--<string name="level_two_question_one_option_four">Medium System Intelligent</string>-->
-    <!--<string name="level_two_question_one_answer">Medium Scale Integrated</string>-->
+    <!--Question-Options-Answer set for level one-->
 
-    <!--<string name="level_two_question_two">A system is</string>-->
-    <!--<string name="level_two_question_two_option_one">an integration of different units so as to achieve an objective</string>-->
-    <!--<string name="level_two_question_two_option_two">input unit</string>-->
-    <!--<string name="level_two_question_two_option_three">input and output unit</string>-->
-    <!--<string name="level_two_question_two_option_four">input, output and storage units</string>-->
-    <!--<string name="level_two_question_two_answer">an integration of different units so as to achieve an objective</string>-->
+    <string name="level_two_question_one">Which of the following are not the permanent member of the United Nation</string>
+    <string name="level_two_question_one_option_one">Germany</string>
+    <string name="level_two_question_one_option_two">India</string>
+    <string name="level_two_question_one_option_three">France</string>
+    <string name="level_two_question_one_option_four">Japan</string>
+    <string-array name="level_two_question_one_answer">
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+    </string-array>
 
-    <!--<string name="level_two_question_three">An error in computer data is called</string>-->
-    <!--<string name="level_two_question_three_option_one">Chip</string>-->
-    <!--<string name="level_two_question_three_option_two">Bug</string>-->
-    <!--<string name="level_two_question_three_option_three">CPU</string>-->
-    <!--<string name="level_two_question_three_option_four">Storage device</string>-->
-    <!--<string name="level_two_question_three_answer">Bug</string>-->
+    <string name="level_two_question_two">Which of the following are union territory</string>
+    <string name="level_two_question_two_option_one">Chandigarh</string>
+    <string name="level_two_question_two_option_two">Pondicherry</string>
+    <string name="level_two_question_two_option_three">Chennai</string>
+    <string name="level_two_question_two_option_four">New Delhi</string>
+    <string-array name="level_two_question_two_answer">
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+    </string-array>
 
-    <!--<string name="level_two_question_four">Computer professionals working in a computer centre are</string>-->
-    <!--<string name="level_two_question_four_option_one">Software</string>-->
-    <!--<string name="level_two_question_four_option_two">Firmware</string>-->
-    <!--<string name="level_two_question_four_option_three">Hardware</string>-->
-    <!--<string name="level_two_question_four_option_four">Humanware</string>-->
-    <!--<string name="level_two_question_four_answer">Humanware</string>-->
+    <string name="level_two_question_three">Who among the following has not served as the Prime Minister if the India</string>
+    <string name="level_two_question_three_option_one">Atal Bihari Vajpayee</string>
+    <string name="level_two_question_three_option_two">Rahul Gandhi</string>
+    <string name="level_two_question_three_option_three">Narendra Modi</string>
+    <string name="level_two_question_three_option_four">Lal Krishan Advani</string>
+    <string-array name="level_two_question_three_answer">
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+    </string-array>
 
-    <!--<string name="level_two_question_five">Computer instructions written with the use of English words instead of binary machine code is called</string>-->
-    <!--<string name="level_two_question_five_option_one">Mnemonics</string>-->
-    <!--<string name="level_two_question_five_option_two">Symbolic code</string>-->
-    <!--<string name="level_two_question_five_option_three">Gray codes</string>-->
-    <!--<string name="level_two_question_five_option_four">Opcode</string>-->
-    <!--<string name="level_two_question_five_answer">Symbolic code</string>-->
+    <string name="level_two_question_four">Which of the given countries have their own GPS </string>
+    <string name="level_two_question_four_option_one">France</string>
+    <string name="level_two_question_four_option_two">India</string>
+    <string name="level_two_question_four_option_three">China</string>
+    <string name="level_two_question_four_option_four">Russia</string>
+    <string-array name="level_two_question_four_answer">
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+    </string-array>
+
+    <string-array name="level_two_question">
+        <item>@string/level_two_question_one</item>
+        <item>@string/level_two_question_two</item>
+        <item>@string/level_two_question_three</item>
+        <item>@string/level_two_question_four</item>
+    </string-array>
+
+    <string-array name="level_two_option_one">
+        <item>@string/level_two_question_one_option_one</item>
+        <item>@string/level_two_question_two_option_one</item>
+        <item>@string/level_two_question_three_option_one</item>
+        <item>@string/level_two_question_four_option_one</item>
+    </string-array>
+
+    <string-array name="level_two_option_two">
+        <item>@string/level_two_question_one_option_two</item>
+        <item>@string/level_two_question_two_option_two</item>
+        <item>@string/level_two_question_three_option_two</item>
+        <item>@string/level_two_question_four_option_two</item>
+    </string-array>
+
+    <string-array name="level_two_option_three">
+        <item>@string/level_two_question_one_option_three</item>
+        <item>@string/level_two_question_two_option_three</item>
+        <item>@string/level_two_question_three_option_three</item>
+        <item>@string/level_two_question_four_option_three</item>
+    </string-array>
+
+    <string-array name="level_two_option_four">
+        <item>@string/level_two_question_one_option_four</item>
+        <item>@string/level_two_question_two_option_four</item>
+        <item>@string/level_two_question_three_option_four</item>
+        <item>@string/level_two_question_four_option_four</item>
+    </string-array>
+
+    <array name="level_two_answer">
+        <item>@array/level_two_question_one_answer</item>
+        <item>@array/level_two_question_two_answer</item>
+        <item>@array/level_two_question_three_answer</item>
+        <item>@array/level_two_question_four_answer</item>
+    </array>
 
     <string name="submit">Submit</string>
     <string name="score">Score: %d/%d</string>
     <string name="ok">OK</string>
+
     <string name="dialog_message">The quiz contains Three Parts.  Lower part must be played in order to unlock higher levels</string>
 
 </resources>

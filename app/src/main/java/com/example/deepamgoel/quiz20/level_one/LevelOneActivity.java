@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,6 +27,7 @@ public class LevelOneActivity extends AppCompatActivity {
     static List<LevelOneAnswer> answerList;
     List<LevelOneModel> listItems;
     RecyclerView mRecyclerView;
+    TextView scoreTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +40,11 @@ public class LevelOneActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mRecyclerView = findViewById(R.id.recyclerViewOne);
+        scoreTextView = findViewById(R.id.score_text_view);
         listItems = new ArrayList<>();
         answerList = new ArrayList<>();
 
+        scoreTextView.setText(getString(R.string.score, MainActivity.score, 30));
         loadData();
 
         mRecyclerView.setNestedScrollingEnabled(false);
@@ -72,19 +74,18 @@ public class LevelOneActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(LevelOneActivity.this, "Action Disabled", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Action Disabled", Toast.LENGTH_SHORT).show();
     }
 
     public void submitLevelOne(View view) {
-        Log.i("List size", String.valueOf(answerList.size()));
+
         for (int i = 0; i < answerList.size(); i++) {
             LevelOneAnswer obj = answerList.get(i);
             RadioButton radioButton = obj.radioGroup.findViewById(obj.checkedId);
 
             if (String.valueOf(radioButton.getText()).equals(obj.viewHolder.answer)) {
                 MainActivity.score += 2;
-//                TODO Add Score Indicator
-//                MainActivity.scoreTextView.setText(getString(R.string.score, MainActivity.score, 30));
+                scoreTextView.setText(getString(R.string.score, MainActivity.score, 30));
                 radioButton.setTextColor(getResources().getColor(R.color.correct));
             } else {
                 int options = 0;

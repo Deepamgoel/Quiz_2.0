@@ -35,7 +35,6 @@ public class LevelOneAdapter extends RecyclerView.Adapter<LevelOneAdapter.CardVi
 
     @Override
     public void onBindViewHolder(@NonNull final CardViewHolder holder, final int position) {
-        holder.setIsRecyclable(false);
         LevelOneModel levelOneModel = list.get(position);
         holder.question.setText(levelOneModel.question);
         holder.option1.setText(levelOneModel.option1);
@@ -61,7 +60,7 @@ public class LevelOneAdapter extends RecyclerView.Adapter<LevelOneAdapter.CardVi
 
 //              Adding object if not present already
                 if (!present) {
-                    LevelOneActivity.answerList.add(new LevelOneAnswer(holder, group, checkedId));
+                    LevelOneActivity.answerList.add(levelOneAnswer);
                 }
             }
         });
