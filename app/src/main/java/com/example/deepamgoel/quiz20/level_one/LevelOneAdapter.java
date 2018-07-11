@@ -72,7 +72,6 @@ public class LevelOneAdapter extends RecyclerView.Adapter<LevelOneAdapter.CardVi
     }
 
     class CardViewHolder extends RecyclerView.ViewHolder {
-
         TextView question;
         RadioGroup radioGroup;
         RadioButton option1;

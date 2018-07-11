@@ -47,12 +47,10 @@ class LevelThreeAdapter extends RecyclerView.Adapter<LevelThreeAdapter.CardViewH
         holder.editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
             }
 
             @Override
@@ -77,7 +75,6 @@ class LevelThreeAdapter extends RecyclerView.Adapter<LevelThreeAdapter.CardViewH
                 }
             }
         });
-
     }
 
     @Override
@@ -86,7 +83,6 @@ class LevelThreeAdapter extends RecyclerView.Adapter<LevelThreeAdapter.CardViewH
     }
 
     class CardViewHolder extends RecyclerView.ViewHolder {
-
         TextView question;
         ImageView imageView;
         EditText editText;
@@ -98,8 +94,6 @@ class LevelThreeAdapter extends RecyclerView.Adapter<LevelThreeAdapter.CardViewH
             question = itemView.findViewById(R.id.level_three_question);
             imageView = itemView.findViewById(R.id.level_three_image);
             editText = itemView.findViewById(R.id.level_three_answer);
-
         }
     }
-
 }

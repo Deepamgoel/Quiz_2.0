@@ -12,5 +12,4 @@ public class LevelThreeModel {
         this.drawable = drawable;
         this.answer = answer;
     }
-
 }

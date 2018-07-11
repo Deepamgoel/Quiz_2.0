@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-
     }
 
     public void launchLevelOne(View view) {

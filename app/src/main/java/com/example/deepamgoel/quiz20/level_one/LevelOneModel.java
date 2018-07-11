@@ -16,5 +16,4 @@ public class LevelOneModel {
         this.option4 = option4;
         this.answer = answer;
     }
-
 }

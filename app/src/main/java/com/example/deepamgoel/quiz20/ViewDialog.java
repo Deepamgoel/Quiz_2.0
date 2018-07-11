@@ -33,7 +33,6 @@ public class ViewDialog {
         });
 
         dialog.show();
-
     }
 
     public void showDialog(Activity activity, String msg, Drawable image) {
@@ -59,6 +58,5 @@ public class ViewDialog {
         });
 
         dialog.show();
-
     }
 }

@@ -52,7 +52,6 @@ public class LevelOneActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         mRecyclerView.setAdapter(new LevelOneAdapter(this, listItems));
-
     }
 
     @Override
@@ -103,7 +102,6 @@ public class LevelOneActivity extends AppCompatActivity {
             obj.viewHolder.option2.setEnabled(false);
             obj.viewHolder.option3.setEnabled(false);
             obj.viewHolder.option4.setEnabled(false);
-
         }
 
         Toast.makeText(this, getString(R.string.score, MainActivity.score, 30), Toast.LENGTH_LONG).show();

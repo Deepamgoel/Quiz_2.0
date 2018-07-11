@@ -37,7 +37,7 @@ public class LevelThreeActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(" ");
         TextView title = toolbar.findViewById(R.id.toolbar_title);
-        title.setText(R.string.level1);
+        title.setText(R.string.level3);
         setSupportActionBar(toolbar);
 
         mRecyclerView = findViewById(R.id.recyclerViewThree);
@@ -52,7 +52,6 @@ public class LevelThreeActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         mRecyclerView.setAdapter(new LevelThreeAdapter(this, listItems));
-
     }
 
     @Override
@@ -70,7 +69,6 @@ public class LevelThreeActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-
     }
 
     @Override
@@ -107,7 +105,6 @@ public class LevelThreeActivity extends AppCompatActivity {
             alert.showDialog(this, message, ContextCompat.getDrawable(this, R.drawable.champ));
         }
 
-
         Button button = findViewById(R.id.level_three_exit);
         button.setEnabled(true);
         view.setEnabled(false);
@@ -119,7 +116,6 @@ public class LevelThreeActivity extends AppCompatActivity {
     }
 
     private void loadData() {
-
         String[] questions = getResources().getStringArray(R.array.level_three_question);
         TypedArray images = getResources().obtainTypedArray(R.array.level_three_images);
         String[] answer = getResources().getStringArray(R.array.level_three_answer);

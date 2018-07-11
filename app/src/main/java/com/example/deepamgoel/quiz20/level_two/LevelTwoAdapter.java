@@ -35,7 +35,6 @@ public class LevelTwoAdapter extends RecyclerView.Adapter<LevelTwoAdapter.CardVi
     @Override
     public void onBindViewHolder(@NonNull final CardViewHolder holder, int position) {
 
-        holder.setIsRecyclable(false);
         LevelTwoModel levelTwoModel = list.get(position);
         holder.question.setText(levelTwoModel.question);
         holder.option1.setText(levelTwoModel.option1);
@@ -102,7 +101,6 @@ public class LevelTwoAdapter extends RecyclerView.Adapter<LevelTwoAdapter.CardVi
     }
 
     class CardViewHolder extends RecyclerView.ViewHolder {
-
         TextView question;
         CheckBox option1;
         CheckBox option2;

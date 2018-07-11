@@ -1,7 +1,6 @@
 package com.example.deepamgoel.quiz20.level_two;
 
 public class LevelTwoAnswer {
-
     LevelTwoAdapter.CardViewHolder viewHolder;
     String question;
     String[] answer;

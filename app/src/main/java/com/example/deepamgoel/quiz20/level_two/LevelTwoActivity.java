@@ -53,7 +53,6 @@ public class LevelTwoActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         mRecyclerView.setAdapter(new LevelTwoAdapter(this, listItems));
-
     }
 
     @Override
@@ -71,7 +70,6 @@ public class LevelTwoActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-
     }
 
     @Override
@@ -145,7 +143,6 @@ public class LevelTwoActivity extends AppCompatActivity {
                 }
             }
 
-
             if (correct) {
                 MainActivity.score += 2;
                 scoreTextView.setText(getString(R.string.score, MainActivity.score, 30));
@@ -187,7 +184,6 @@ public class LevelTwoActivity extends AppCompatActivity {
         }
         typedArray.recycle();
 
-
         for (int i = 0; i < questions.length; i++) {
             LevelTwoModel listItem = new LevelTwoModel(
                     questions[i],
@@ -200,5 +196,4 @@ public class LevelTwoActivity extends AppCompatActivity {
             listItems.add(listItem);
         }
     }
-
 }
