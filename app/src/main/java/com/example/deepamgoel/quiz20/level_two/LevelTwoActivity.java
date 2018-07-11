@@ -34,6 +34,7 @@ public class LevelTwoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_two);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(" ");
         TextView title = toolbar.findViewById(R.id.toolbar_title);
@@ -96,8 +97,10 @@ public class LevelTwoActivity extends AppCompatActivity {
                     option1.setTextColor(getResources().getColor(R.color.incorrect));
                 }
             } else {
-                if (Boolean.parseBoolean(obj.answer[0]))
+                if (Boolean.parseBoolean(obj.answer[0])) {
                     option1.setTextColor(getResources().getColor(R.color.correct));
+                    correct = false;
+                }
             }
 
             if (option2.isChecked()) {
@@ -108,8 +111,10 @@ public class LevelTwoActivity extends AppCompatActivity {
                     option2.setTextColor(getResources().getColor(R.color.incorrect));
                 }
             } else {
-                if (Boolean.parseBoolean(obj.answer[1]))
+                if (Boolean.parseBoolean(obj.answer[1])) {
                     option2.setTextColor(getResources().getColor(R.color.correct));
+                    correct = false;
+                }
             }
 
             if (option3.isChecked()) {
@@ -120,8 +125,10 @@ public class LevelTwoActivity extends AppCompatActivity {
                     option3.setTextColor(getResources().getColor(R.color.incorrect));
                 }
             } else {
-                if (Boolean.parseBoolean(obj.answer[2]))
+                if (Boolean.parseBoolean(obj.answer[2])) {
                     option3.setTextColor(getResources().getColor(R.color.correct));
+                    correct = false;
+                }
             }
 
             if (option4.isChecked()) {
@@ -132,8 +139,10 @@ public class LevelTwoActivity extends AppCompatActivity {
                     option4.setTextColor(getResources().getColor(R.color.incorrect));
                 }
             } else {
-                if (Boolean.parseBoolean(obj.answer[3]))
+                if (Boolean.parseBoolean(obj.answer[3])) {
                     option4.setTextColor(getResources().getColor(R.color.correct));
+                    correct = false;
+                }
             }
 
 

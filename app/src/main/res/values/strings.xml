@@ -1,8 +1,23 @@
 <resources>
     <string name="app_name">Quiz 2.0</string>
+
     <string name="info">info</string>
 
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="ok">OK</string>
+    <string name="exit">Exit</string>
+    <string name="start">Start</string>
+    <string name="submit">Submit</string>
+    <string name="answer">Answer</string>
+    <string name="score">Score: %d/%d</string>
+    <string name="next_level">Next Level</string>
+
+    <string name="level1">Level 1</string>
+    <string name="level2">Level 2</string>
+    <string name="level3">Level 3</string>
+
+    <!--Demo question start-->
 
     <string name="que1">What are the symptoms of suffering from kidney disease?</string>
     <string name="opt1">High blood pressure</string>
@@ -10,12 +25,7 @@
     <string name="opt3">Swelling on face, legs etc</string>
     <string name="opt4">All of the above</string>
 
-    <string name="start">Start</string>
-    <string name="next_level">Next Level</string>
-
-    <string name="level1">Level 1</string>
-    <string name="level2">Level 2</string>
-    <string name="level3">Level 3</string>
+    <!--Demo question end-->
 
     <!--Question-Options-Answer set for level one-->
 
@@ -102,7 +112,9 @@
         <item>@string/level_one_question_five_answer</item>
     </string-array>
 
-    <!--Question-Options-Answer set for level one-->
+    <!--Question-Options-Answer set level one end-->
+
+    <!--Question-Options-Answer set for level two-->
 
     <string name="level_two_question_one">Which of the following are not the permanent member of the United Nation</string>
     <string name="level_two_question_one_option_one">Germany</string>
@@ -194,10 +206,45 @@
         <item>@array/level_two_question_four_answer</item>
     </array>
 
-    <string name="submit">Submit</string>
-    <string name="score">Score: %d/%d</string>
-    <string name="ok">OK</string>
+    <!--Question-Options-Answer set level two end-->
 
-    <string name="dialog_message">The quiz contains Three Parts.  Lower part must be played in order to unlock higher levels</string>
+    <!--Question-Answer set level three start-->
+
+    <string name="level_three_question_one">What is the capital of France</string>
+    <string name="level_three_question_one_answer">Paris</string>
+
+    <string name="level_three_question_two">Identify the celebrity</string>
+    <string name="level_three_question_two_answer">Elon Musk</string>
+
+    <string name="level_three_question_three">Who was the first man to travel into space</string>
+    <string name="level_three_question_three_answer">Yuri Gagarin</string>
+
+    <string-array name="level_three_question">
+        <item>@string/level_three_question_one</item>
+        <item>@string/level_three_question_two</item>
+        <item>@string/level_three_question_three</item>
+    </string-array>
+
+    <array name="level_three_images">
+        <item>@drawable/france</item>
+        <item>@drawable/elon</item>
+        <item>@drawable/yuri</item>
+    </array>
+
+    <array name="level_three_answer">
+        <item>@string/level_three_question_one_answer</item>
+        <item>@string/level_three_question_two_answer</item>
+        <item>@string/level_three_question_three_answer</item>
+    </array>
+
+    <!--Question-Answer set level three end-->
+
+    <string name="dialog_message" formatted="false">The quiz app contains 3 level. Lower level must be submitted in order to unlock higher level.
+        \n\n Level 1 contains the multiple choice questions containing <b><i>2 points</i></b> for each question answered correct
+        \n\n Level 2 may have more than one answer for given question. Each question contains <i>2 points</i> if answered correctly.
+        \n\n Level 3 has short answer questions. Each question contains <i>4 points</i> if answered correctly.
+    </string>
+    <string name="dialog_image">Dialog Image</string>
+    <string name="level_three_image">Level Three Image</string>
 
 </resources>

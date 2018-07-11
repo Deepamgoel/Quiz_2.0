@@ -3,7 +3,7 @@
     package="com.example.deepamgoel.quiz20">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -16,9 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".level_one.LevelOneActivity" />
-        <activity android:name=".level_two.LevelTwoActivity" />
-        <activity android:name=".level_three.LevelThreeActivity" />
+        <activity
+            android:name=".level_one.LevelOneActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".level_two.LevelTwoActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".level_three.LevelThreeActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

@@ -33,6 +33,7 @@ public class LevelOneActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_one);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(" ");
         TextView title = toolbar.findViewById(R.id.toolbar_title);
